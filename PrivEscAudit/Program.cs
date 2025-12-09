@@ -290,7 +290,7 @@ namespace PrivEscAudit
             }
         }
 
-        static bool HasWriteAccess(ObjectSecurity security, WindowsIdentity identity)
+        static bool HasWriteAccess(CommonObjectSecurity security, WindowsIdentity identity)
         {
             if (security == null) return false;
 
