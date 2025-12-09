@@ -11,10 +11,19 @@ This is a console application written in C# for .NET Framework to audit Windows 
 
 ## Compilation
 
-To compile this tool, you need the .NET Framework SDK (part of Visual Studio or available separately). You can use the C# compiler (`csc.exe`) typically found in `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (or similar version).
+You can compile this tool using Visual Studio or the command-line compiler (`csc.exe`).
+
+### Using Visual Studio
+1.  Open `PrivEscAudit.sln` in Visual Studio (2017, 2019, 2022, etc.).
+2.  Select `Release` configuration.
+3.  Build the solution (`Ctrl+Shift+B`).
+4.  The executable will be in `PrivEscAudit\bin\Release\PrivEscAudit.exe`.
+
+### Using Command Line (csc.exe)
+If you just have the `.cs` file or want to compile manually without the solution:
 
 ```cmd
-csc.exe /out:PrivEscAudit.exe PrivEscAudit.cs /reference:System.ServiceProcess.dll
+csc.exe /out:PrivEscAudit.exe PrivEscAudit\Program.cs /reference:System.ServiceProcess.dll
 ```
 
 ## Usage
